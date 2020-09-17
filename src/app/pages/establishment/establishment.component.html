@@ -1,0 +1,87 @@
+<header class="container d-flex justify-content-center">
+  <img class="header-image" src="assets/images/james.png" />
+</header>
+<div class="background">
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="d-flex flex-row">
+          <div class="button-row margin-top">
+            <button mat-icon-button (click)="handleEstablishments()">
+              <mat-icon>keyboard_backspace</mat-icon>
+            </button>
+          </div>
+          <img class="div-image margin-top" [src]="establishment?.picture" />
+          <div class="d-flex flex-column margin-top">
+            <strong class="div-text">{{ establishment?.name }}</strong>
+            <p class="mb-2 text-muted">ID: {{ establishment?.index }}</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <h5>Informações Básicas</h5>
+        <hr />
+        <form [formGroup]="form">
+          <div class="d-flex flex-row justify-content-between">
+            <mat-form-field class="mat-form-space">
+              <mat-label>Nome</mat-label>
+              <mat-select formControlName="name">
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let name of names" [value]="name">
+                  {{ name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="mat-form-space">
+              <mat-label>Endereço</mat-label>
+              <input matInput type="text" formControlName="address" />
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Registrado</mat-label>
+              <input matInput type="text" formControlName="registered" />
+            </mat-form-field>
+          </div>
+
+          <h5>Contato</h5>
+          <hr />
+
+          <div class="d-flex flex-row justify-content-between">
+            <mat-form-field class="mat-form-space">
+              <mat-label>Email</mat-label>
+              <input matInput type="text" formControlName="email" />
+            </mat-form-field>
+
+            <mat-form-field class="mat-form-space">
+              <mat-label>Telefone</mat-label>
+              <input matInput type="text" formControlName="phone" />
+            </mat-form-field>
+
+            <mat-form-field class="mat-form-space">
+              <mat-label>Latitude</mat-label>
+              <input matInput type="text" formControlName="latitude" />
+            </mat-form-field>
+          </div>
+
+          <mat-form-field class="mat-form-space">
+            <mat-label>Longitude</mat-label>
+            <input matInput type="text" formControlName="longitude" />
+          </mat-form-field>
+
+          <div class="d-flex flex-row-reverse margin-button">
+            <button
+              mat-button
+              color="primary"
+              class="d-flex justify-content-end"
+              (click)="handleSaveEstablishment()"
+            >
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

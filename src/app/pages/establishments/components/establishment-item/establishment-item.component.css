@@ -1,0 +1,13 @@
+.card-space {
+  margin: 4px;
+  cursor: pointer;
+}
+
+.div-image {
+  margin-right: 8px;
+  width: 60px;
+}
+
+.div-text {
+  margin-right: 8px;
+}

@@ -1,0 +1,12 @@
+<header class="container d-flex justify-content-center">
+  <img class="header-image" src="assets/images/james.png" />
+</header>
+<div class="background">
+  <div class="container background">
+    <app-establishment-item
+      *ngFor="let establishment of EstablishmentsList"
+      [establishment]="establishment"
+    >
+    </app-establishment-item>
+  </div>
+</div>

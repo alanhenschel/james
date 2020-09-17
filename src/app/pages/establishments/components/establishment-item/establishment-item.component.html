@@ -1,0 +1,12 @@
+<div class="card card-space" (click)="handleNavigate()">
+  <div class="d-flex flex-row">
+    <img class="div-image" [src]="image" />
+    <div class="Container">
+      <div class="d-flex flex-row">
+        <strong class="div-text">{{ name }}</strong>
+        <p class="mb-2 text-muted">{{ index }}</p>
+      </div>
+      <p class="mb-2 text-muted">{{ city }} | {{ address }}</p>
+    </div>
+  </div>
+</div>

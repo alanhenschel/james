@@ -1,0 +1,59 @@
+.div-image {
+  margin-right: 8px;
+  width: 60px;
+}
+
+.div-text {
+  margin-right: 8px;
+}
+.header-image {
+  width: 15%;
+}
+
+.background {
+  background-color: #f8f8f8;
+  flex: 1;
+  height: 100%;
+}
+
+header {
+  margin-bottom: 2px;
+}
+
+.mat-form-space {
+  margin-right: 18px;
+}
+
+.margin-top {
+  margin-top: 8px;
+}
+
+.margin-button {
+  margin-bottom: 8px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+}
+
+h5 {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 0;
+  margin-top: 32px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.basic-info {
+  width: 100px;
+}
